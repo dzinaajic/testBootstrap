@@ -11,26 +11,25 @@ body {
 /* Header/logo Title */
 .header {
   padding: 110px;
-  text-align: center;
+  text-align: right; /*otázka 2*/
   background-image: url("./images/landscape.jpg");
 }
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 50px;
+  font-size: 60px; /*otázka 1*/
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  position: sticky;
+  background-color: #333; /*otázka 6*/
   top: 0;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
+  float: right; /*otázka 7*/
   display: block;
   color: white;
   text-align: center;
@@ -40,16 +39,16 @@ body {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  float: left;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #ddd;   
   color: black;
 }
 
-/* Active/current link */
+/* Active/current link */   
 .navbar a.active {
   background-color: #666;
   color: white;
@@ -63,22 +62,23 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
-  background-color: #f1f1f1;
+  flex: 25%;
+  background-color: #434bb3;
+  color: rgb(87, 82, 82); /*otázka 4*/
   padding: 20px;
 }
 
 /* Main column */
 .main {   
-  flex: 70%;
+  flex: 75%;
   background-color: white;
   padding: 20px;
 }
 
 /* Footer */
 .footer {
-  padding: 20px;
-  background: #474747;
+  padding: 60px; /*otázka 5*/
+  background: #5cb468;
 }
 
 /* Center the text */
@@ -93,7 +93,7 @@ body {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(235, 86, 86); /*otázka 10*/
 }
 
 /* Styles for the post heading */
